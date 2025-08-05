@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detail_background3"
+    tools:context=".Details_2_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Details"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/details_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help us create the perfect diet plan for you"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Profession -->
+                <TextView
+                    android:id="@+id/profession_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profession"
+                    android:textStyle="bold"
+                    android:textColor="#3c7962"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:id="@+id/profession_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="e.g. Office worker, Teacher, etc."
+                    android:inputType="text"
+                    android:padding="12dp" />
+
+                <!-- Daily Schedule -->
+                <TextView
+                    android:id="@+id/schedule_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Schedule"
+                    android:textStyle="bold"
+                    android:textColor="#3c7962"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:id="@+id/schedule_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="Briefly describe your daily routine..."
+                    android:inputType="textMultiLine"
+                    android:padding="12dp" />
+
+                <!-- Allergies -->
+                <TextView
+                    android:id="@+id/allergies_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Allergies"
+                    android:textStyle="bold"
+                    android:textColor="#3c7962"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:id="@+id/allergies_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="e.g. Nuts, Dairy, etc."
+                    android:inputType="text"
+                    android:padding="12dp" />
+
+                <!-- Medical Issues -->
+                <TextView
+                    android:id="@+id/medical_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Issues"
+                    android:textStyle="bold"
+                    android:textColor="#3c7962"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:id="@+id/medical_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="Any health conditions we should know about?"
+                    android:inputType="textMultiLine"
+                    android:padding="12dp" />
+
+                <!-- Diet Preference -->
+                <TextView
+                    android:id="@+id/diet_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diet Preference"
+                    android:textStyle="bold"
+                    android:textColor="#3c7962"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/diet_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <RadioButton
+                        android:id="@+id/vegetarian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetarian" />
+
+                    <RadioButton
+                        android:id="@+id/non_vegetarian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Non-Vegetarian" />
+                </RadioGroup>
+
+                <!-- Complete Button -->
+                <Button
+                    android:id="@+id/complete_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#2C6B5B"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

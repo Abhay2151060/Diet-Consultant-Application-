@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/headingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diet Details"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#3c7962"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal">
+            <!-- Gender -->
+                <TextView
+                    android:id="@+id/dietGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender: Female"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_card"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal">
+            <!-- Age -->
+                <TextView
+                    android:id="@+id/dietAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Age: 25"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_card"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal">
+            <!-- Height -->
+                <TextView
+                    android:id="@+id/dietHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Height: 165 cm"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_card"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal">
+            <!-- Weight -->
+                <TextView
+                    android:id="@+id/dietWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weight: 60 kg"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backToProfileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Profile"
+            android:backgroundTint="#2C6B5B"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</ScrollView>

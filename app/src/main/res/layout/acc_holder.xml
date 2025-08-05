@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="@drawable/background_2">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo_description" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/app_name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2C6B5B"/>
+
+    <!-- Food Image -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#C9DED6"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/food_image"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:layout_below="@id/logo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/multiple_user1"
+            android:contentDescription="@string/food_image_description" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Account Holder Section -->
+    <TextView
+        android:id="@+id/account_holder_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/account_holder_label"
+        android:textColor="#2C6B5B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- User 1 (Atlas) -->
+    <RelativeLayout
+        android:id="@+id/user_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/account_holder_label"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/user_1_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/breakfast"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/user_1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_1_icon"
+            android:layout_marginStart="10dp"
+            android:text="Account Owner"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!-- User 2 (Guest) -->
+    <RelativeLayout
+        android:id="@+id/user_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/user_1"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/user_2_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/breakfast"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/user_2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_2_icon"
+            android:layout_marginStart="10dp"
+            android:text="Member 1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!-- Add User -->
+    <RelativeLayout
+        android:id="@+id/add_user"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/user_2"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/add_user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/breakfast"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/add_user_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/add_user_icon"
+            android:layout_marginStart="10dp"
+            android:text="Member 2"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/add_user"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/next_button_text"
+        android:backgroundTint="#2C6B5B"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:minWidth="48dp"/>
+
+</RelativeLayout>

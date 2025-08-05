@@ -1,0 +1,15 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo_description">App logo</string>
+    <string name="app_name">Dietify</string>
+    <string name="food_image_description">Food illustration</string>
+    <string name="account_holder_label">Account Holder</string>
+    <string name="user_1_name">Member 1</string>
+    <string name="user_2_name">Member 2</string>
+    <string name="add_user_text">Member 3</string>
+    <string name="next_button_text">Next</string>
+    <string name="user_name_sample">Sarah Johnson</string>
+    <string name="user_email_sample">sarah@example.com</string>
+
+</resources>

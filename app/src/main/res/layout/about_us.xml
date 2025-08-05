@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="134dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="126.5dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="126.5dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Dietify"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#3c7962"/>
+
+    <TextView
+        android:id="@+id/about_us"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/app_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="115dp"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textColor="#3c7962"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="404dp"
+        android:layout_below="@id/about_us"
+        android:layout_marginTop="65dp"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="4dp"
+        android:padding="8dp"
+        android:text="
+Dietify your own personal diet advisor here to make eating well easy and successful. Every body is different and has distinct nutritional requirements which is why Dietify prepares personalized diet plans suited to your lifestyle. Body and ambitions.
+\n\nJust fill in your information like age, weight, food preferences, fitness goals and medical conditions and let our intelligent algorithm create a customized meal plan tailored to you whether you want to lose weight, build muscle, improve digestion or be generally healthy.
+\n\nDietify gives you science-backed advice to guide you to your goal with expert-approved meal plans, progress tracking and adjustable plans. Dietify simplifies healthy eating so that it is easy, sustainable and enjoyable. Begin your path with Dietify today and start building a healthier you."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="250dp"
+        android:backgroundTint="#2C6B5B"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
